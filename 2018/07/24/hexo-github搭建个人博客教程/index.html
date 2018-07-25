@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>hexo+github搭建个人博客教程 | 高老板的个人博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="MinHow,MinHow's Blog" />
+  
+  <meta name="description" content="一、hexo 特点：快速、简洁且高效的博客框架 环境：基于node（v8.11.2）(1)、环境及检测：win+r输入cmd回车cmd窗口输入node -v回车如果提示node不是内部或者外部命令，则需要安装node(2)、安装node环境：在百度输入node，进入第一个node.js官网，下载8.11.3LTS，然后下载好了直接安装msi文件点下载 下载8.11.3版本双击下载得到的mis文件，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo+github搭建个人博客教程">
+<meta property="og:url" content="http://yoursite.com/2018/07/24/hexo-github搭建个人博客教程/index.html">
+<meta property="og:site_name" content="高老板的个人博客">
+<meta property="og:description" content="一、hexo 特点：快速、简洁且高效的博客框架 环境：基于node（v8.11.2）(1)、环境及检测：win+r输入cmd回车cmd窗口输入node -v回车如果提示node不是内部或者外部命令，则需要安装node(2)、安装node环境：在百度输入node，进入第一个node.js官网，下载8.11.3LTS，然后下载好了直接安装msi文件点下载 下载8.11.3版本双击下载得到的mis文件，">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-07-24T06:31:33.131Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="hexo+github搭建个人博客教程">
+<meta name="twitter:description" content="一、hexo 特点：快速、简洁且高效的博客框架 环境：基于node（v8.11.2）(1)、环境及检测：win+r输入cmd回车cmd窗口输入node -v回车如果提示node不是内部或者外部命令，则需要安装node(2)、安装node环境：在百度输入node，进入第一个node.js官网，下载8.11.3LTS，然后下载好了直接安装msi文件点下载 下载8.11.3版本双击下载得到的mis文件，">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/pace.min.js"></script>
+  
+
+  
+  
+
+</head>
+
+<body>
+  <div id="container">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer">
+        <div id="header-menu" class="header-menu-pos animated">
+            <div class="header-menu-container">
+                <a href="/" class="left">
+                    <span class="site-title">MinHow&#39;s Blog</span>
+                </a>
+                <nav id="header-menu-nav" class="right">
+                    
+                    <a  href="/">
+                        <i class="fa fa-home"></i>
+                        <span>主页</span>
+                    </a>
+                    
+                    <a  href="/archives">
+                        <i class="fa fa-archive"></i>
+                        <span>归档</span>
+                    </a>
+                    
+                    <a  href="/about">
+                        <i class="fa fa-user"></i>
+                        <span>关于</span>
+                    </a>
+                    
+                </nav>
+                <a class="mobile-header-menu-button">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div id="header-row">
+            <div id="logo">
+                <a href="/">
+                    <img src="/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-info">
+                <div id="header-title">
+                    
+                    <h2>
+                        MinHow&#39;s Blog
+                    </h2>
+                    
+                </div>
+                <div id="header-description">
+                    
+                    <h3>
+                        一个专注 WEB 开发的技术博客
+                    </h3>
+                    
+                </div>
+            </div>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a title="MinHow" target="_blank" href="//minhow.com">
+                            <i class="fa fa-home fa-2x"></i></a>
+                    
+                        <a title="Github" target="_blank" href="//github.com/wongminho">
+                            <i class="fa fa-github fa-2x"></i></a>
+                    
+                        <a title="Weibo" target="_blank" href="//weibo.com/WongMinHo">
+                            <i class="fa fa-weibo fa-2x"></i></a>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+      <div class="outer">
+        <section id="main" class="body-wrap"><article id="post-hexo-github搭建个人博客教程" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="post-title" itemprop="name">
+      hexo+github搭建个人博客教程
+    </h1>
+    <div class="post-title-bar">
+      <ul>
+          
+        <li>
+          <i class="fa fa-calendar"></i>  2018-07-24
+        </li>
+        <li>
+          <i class="fa fa-eye"></i>
+          <span id="busuanzi_value_page_pv"></span>
+        </li>
+      </ul>
+    </div>
+  
+
+          
+      </header>
+    
+    <div class="article-entry post-content" itemprop="articleBody">
+      
+            
+            <h3 id="一、hexo"><a href="#一、hexo" class="headerlink" title="一、hexo"></a>一、hexo</h3><ol>
+<li>特点：快速、简洁且高效的博客框架</li>
+<li><p>环境：基于node（v8.11.2）<br>(1)、环境及检测：<br>win+r输入cmd回车<br>cmd窗口输入node -v回车<br>如果提示node不是内部或者外部命令，则需要安装node<br>(2)、安装node环境：<br>在百度输入node，进入第一个node.js官网，下载8.11.3LTS，然后下载好了直接安装msi文件点<br><a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">下载</a> 下载8.11.3版本<br>双击下载得到的mis文件，全程next安装<br>node -v 查看版本</p>
+<h3 id="二、安装git-版本控制器"><a href="#二、安装git-版本控制器" class="headerlink" title="二、安装git(版本控制器)"></a>二、安装git(版本控制器)</h3><p><a href="https://git-scm.com/" target="_blank" rel="noopener">下载</a><br>百度里面输入git打开git官网在右下角有一个电脑显示器上有Download下载按钮</p>
+<h3 id="三、安装hexo"><a href="#三、安装hexo" class="headerlink" title="三、安装hexo"></a>三、安装hexo</h3><p>cmd命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<p>npm:基于node的包管理器，类似于ios的app store<br>如果npm可以下载安装需要的插件或者框架<br>install：安装、导入<br>-g：表示全局安装(在任何的目录都可以使用)   </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\web&gt;npm install hexo-cli -g</span><br><span class="line">C:\Users\web\AppData\Roaming\npm\hexo -&gt; C:\Users\web\AppData\Roaming\npm\node_modules\hexo-cli\bin\hexo</span><br><span class="line">npm WARN optional SKIPPING OPTIONAL DEPENDENCY: minimist@0.0.8 (node_modules\hexo-cli\node_modules\mkdirp\node_modules\minimist):</span><br><span class="line"> npm WARN optional SKIPPING OPTIONAL DEPENDENCY: EEXIST: file already exists, mkdir &apos;C:\Users\web\AppData\Roaming\npm\node_modules\hexo-cli\node_modules\mkdirp&apos;</span><br><span class="line">npm WARN optional SKIPPING OPTIONAL DEPENDENCY: File exists: C:\Users\web\AppData\Roaming\npm\node_modules\hexo-cli\node_modules\mkdirp</span><br><span class="line">npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules\hexo-cli\node_modules\fsevents):</span><br><span class="line">npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted &#123;&quot;os&quot;:&quot;darwin&quot;,&quot;arch&quot;:&quot;any&quot;&#125; (current: &#123;&quot;os&quot;:&quot;win32&quot;,&quot;arch&quot;:&quot;x64&quot;&#125;)</span><br><span class="line"></span><br><span class="line">+ hexo-cli@1.1.0</span><br><span class="line">removed 115 packages and updated 98 packages in 48.125s</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>注：有黄色标记可以不管</p>
+<h3 id="四、初始化一个博客项目"><a href="#四、初始化一个博客项目" class="headerlink" title="四、初始化一个博客项目"></a>四、初始化一个博客项目</h3><p>鼠标右击新建一个Git Bash Here<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init blog</span><br><span class="line"></span><br><span class="line">INFO  Cloning hexo-starter to ~\Desktop\个人博客\blog</span><br><span class="line">Cloning into &apos;C:\Users\web\Desktop\个人博客\blog&apos;...</span><br><span class="line">remote: Counting objects: 65, done.</span><br><span class="line">remote: Total 65 (delta 0), reused 0 (delta 0), pack-reused 65</span><br><span class="line">Unpacking objects: 100% (65/65), done.</span><br><span class="line">Submodule &apos;themes/landscape&apos; (https://github.com/hexojs/hexo-theme-landscape.git                                                      ) registered for path &apos;themes/landscape&apos;</span><br><span class="line">Cloning into &apos;C:/Users/web/Desktop/个人博客/blog/themes/landscape&apos;...</span><br><span class="line">remote: Counting objects: 824, done.</span><br><span class="line">INFO  Bye!objects:  27% (228/824), 244.01 KiB | 2.00 KiB/s</span><br><span class="line">warning: Clone succeeded, but checkout failed.</span><br><span class="line">You can inspect what was checked out with &apos;git status&apos;</span><br><span class="line">and retry the checkout with &apos;git checkout -f HEAD&apos;</span><br></pre></td></tr></table></figure></p>
+<ol>
+<li>hexo init 项目名</li>
+<li>切换到项目目录<br>cd 项目名</li>
+<li>安装项目依赖包<br>nmp install</li>
+<li>启动服务<br> hexo s</li>
+</ol>
+
+            <div class="post-copyright">
+    <div class="content">
+        <p>最后更新： 2018年07月24日 14:31</p>
+        <p>原始链接： <a class="post-url" href="/2018/07/24/hexo-github搭建个人博客教程/" title="hexo+github搭建个人博客教程">http://yoursite.com/2018/07/24/hexo-github搭建个人博客教程/</a></p>
+        <footer>
+            <a href="http://yoursite.com">
+                <img src="/images/logo.png" alt="John Doe">
+                John Doe
+            </a>
+        </footer>
+    </div>
+</div>
+
+      
+        
+            
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;">赏</a>
+</div>
+
+<div id="reward" class="post-modal reward-lay">
+    <a class="close" href="javascript:;" id="reward-close">×</a>
+    <span class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        不信你敢扫~
+        <i class="icon icon-quote-right"></i>
+    </span>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/images/wechat_code.jpg" alt="打赏二维码">
+        </div>
+        <div class="reward-select">
+            
+            <label class="reward-select-item checked" data-id="wechat" data-wechat="/images/wechat_code.jpg">
+                <img class="reward-select-item-wechat" src="/images/wechat.png" alt="微信">
+            </label>
+            
+            
+            <label class="reward-select-item" data-id="alipay" data-alipay="/images/alipay_code.jpg">
+                <img class="reward-select-item-alipay" src="/images/alipay.png" alt="支付宝">
+            </label>
+            
+        </div>
+    </div>
+</div>
+
+
+        
+    </div>
+    <footer class="article-footer">
+        
+        
+<div class="post-share">
+    <a href="javascript:;" id="share-sub" class="post-share-fab">
+        <i class="fa fa-share-alt"></i>
+    </a>
+    <div class="post-share-list" id="share-list">
+        <ul class="share-icons">
+          <li>
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2018/07/24/hexo-github搭建个人博客教程/&title=《hexo+github搭建个人博客教程》 — 高老板的个人博客&pic=http://yoursite.comimages/logo.png" data-title="微博">
+              <i class="fa fa-weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a class="weixin share-sns" id="wxFab" href="javascript:;" data-title="微信">
+              <i class="fa fa-weixin"></i>
+            </a>
+          </li>
+          <li>
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/07/24/hexo-github搭建个人博客教程/&title=《hexo+github搭建个人博客教程》 — 高老板的个人博客&source=" data-title="QQ">
+              <i class="fa fa-qq"></i>
+            </a>
+          </li>
+          <li>
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/07/24/hexo-github搭建个人博客教程/" data-title="Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《hexo+github搭建个人博客教程》 — 高老板的个人博客&url=http://yoursite.com/2018/07/24/hexo-github搭建个人博客教程/&via=http://yoursite.com" data-title="Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2018/07/24/hexo-github搭建个人博客教程/" data-title="Google+">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        </ul>
+     </div>
+</div>
+<div class="post-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;" id="wxShare-close">×</a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://yoursite.com/2018/07/24/hexo-github搭建个人博客教程/" alt="微信分享二维码">
+</div>
+
+<div class="mask"></div>
+
+        
+        <ul class="article-footer-menu">
+            
+            
+        </ul>
+        
+    </footer>
+  </div>
+</article>
+
+
+    <aside class="post-toc-pos post-toc-top" id="post-toc">
+        <nav class="post-toc-wrap">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一、hexo"><span class="post-toc-text">一、hexo</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#二、安装git-版本控制器"><span class="post-toc-text">二、安装git(版本控制器)</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#三、安装hexo"><span class="post-toc-text">三、安装hexo</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#四、初始化一个博客项目"><span class="post-toc-text">四、初始化一个博客项目</span></a></li></ol>
+        </nav>
+    </aside>
+    
+
+<nav id="article-nav">
+  
+  
+    <a href="/2018/07/24/markdown语法/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">markdown语法</span>
+      <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+    </a>
+  
+</nav>
+
+
+
+    
+</section>
+        
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+      <p>
+        Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
+      &copy; 2018 John Doe<br>
+      </p>
+    </div>
+  </div>
+</footer>
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var mihoConfig = {
+      root: "http://yoursite.com",
+      animate: true,
+      isHome: false,
+      share: true,
+      reward: 1
+  }
+</script>
+<div class="sidebar">
+    <div id="sidebar-search" title="Search">
+        <i class="fa fa-search"></i>
+    </div>
+    <div id="sidebar-category" title="Categories">
+        <i class="fa fa-book"></i>
+    </div>
+    <div id="sidebar-tag" title="Tags">
+        <i class="fa fa-tags"></i>
+    </div>
+    <div id="sidebar-top">
+        <span class="sidebar-top-icon"><i class="fa fa-angle-up"></i></span>
+    </div>
+</div>
+<div class="sidebar-menu-box" id="sidebar-menu-box">
+    <div class="sidebar-menu-box-container">
+        <div id="sidebar-menu-box-categories">
+            
+        </div>
+        <div id="sidebar-menu-box-tags">
+            
+        </div>
+    </div>
+    <a href="javascript:;" class="sidebar-menu-box-close">&times;</a>
+</div>
+<div class="mobile-header-menu-nav" id="mobile-header-menu-nav">
+    <div class="mobile-header-menu-container">
+        <span class="title">Menus</span>
+        <ul class="mobile-header-menu-navbar">
+            
+            <li>
+                <a  href="/">
+                    <i class="fa fa-home"></i><span>主页</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/archives">
+                    <i class="fa fa-archive"></i><span>归档</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/about">
+                    <i class="fa fa-user"></i><span>关于</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile-header-tag-container">
+        <span class="title">Tags</span>
+        <div id="mobile-header-container-tags">
+            
+        </div>
+    </div>
+</div>
+<div class="search-wrap">
+    <span class="search-close">&times;</span>
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+            <i class="icon icon-lg icon-chevron-left"></i>
+        </a>
+        <input class="search-field" placeholder="Search..." id="keywords">
+        <a id="search-submit" href="javascript:;">
+            <i class="fa fa-search"></i>
+        </a>
+    <div class="search-container" id="search-container">
+        <ul class="search-result" id="search-result">
+        </ul>
+    </div>
+</div>
+
+<div id="search-tpl">
+    <li class="search-result-item">
+        <a href="{url}" class="search-item-li">
+            <span class="search-item-li-title" title="{title}">{title}</span>
+        </a>
+    </li>
+</div>
+<script src="/js/search.js"></script>
+<script src="/js/main.js"></script>
+
+
+  <script src="//cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
+  <div id="particles"></div>
+  <script src="/js/particles.js"></script>
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  <script src="//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js"></script>
+  <script src="/js/animate.js"></script>
+
+
+  <script src="/js/pop-img.js"></script>
+  <script>
+     $(".article-entry p img").popImg();
+  </script>
+
+  </div>
+</body>
+</html>
